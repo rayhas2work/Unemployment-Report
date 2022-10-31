@@ -15,3 +15,15 @@ response = requests.get(request_url)
 parsed_response = json.loads(response.text)
 print(type(parsed_response))
 pprint(parsed_response)
+
+data = parsed_response["data"]
+
+# Challenge A
+#
+# What is the most recent unemployment rate? And the corresponding date? 
+# Display the unemployment rate using a percent sign.
+
+print("-------------------------")
+print("LATEST UNEMPLOYMENT RATE:")
+#print(data[0])
+print(f"{data[0]['value']}%", "as of", data[0]["date"])
