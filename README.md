@@ -1,23 +1,6 @@
 # Unemployment-Report
 
-
-## Usage
-
-Run an example script:
-
-```sh
-python app/my_script.py
-```
-
-Run the unemployment report:
-
-```sh
-python app/unemployment.py
-```
-
 ## Setup
-
-
 Create and activate a virtual environment:
 
 ```sh
@@ -30,3 +13,33 @@ Install package dependencies:
 ```sh
 pip install -r requirements.txt
 ```
+## Configuration
+
+[Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage.
+
+Then create a local ".env" file and provide the key like this:
+
+```sh
+# this is the ".env" file...
+
+ALPHAVANTAGE_API_KEY="_________"
+```
+## Usage
+
+Run the example script:
+
+```sh
+python app/my_script.py
+```
+
+Run the unemployment report:
+
+```sh
+python app/unemployment.py
+```
+
+```sh
+# or pass  env var from command to run
+ALPHAVANTAGE_API_KEY="_____" python app/unemployment.py
+```
+
