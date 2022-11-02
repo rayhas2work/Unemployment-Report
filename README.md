@@ -43,3 +43,10 @@ python app/unemployment.py
 ALPHAVANTAGE_API_KEY="_____" python app/unemployment.py
 ```
 
+## Testing
+Run tests:
+
+```sh
+pytest
+```
+
