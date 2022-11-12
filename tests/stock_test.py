@@ -1,6 +1,6 @@
 from pandas import DataFrame
 
-from app.stock import fetch_stock_data, format_usd
+from app.stocks import fetch_stock_data, format_usd
 
 
 def test_usd_formatting():
