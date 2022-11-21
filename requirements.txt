@@ -1,4 +1,3 @@
-
 # this is the "requirements.txt" file...
 
 python-dotenv
@@ -11,9 +10,11 @@ plotly
 
 sendgrid==6.6.0
 
+#for web app interface
 flask
-gunicorn # <--- UNCOMMENT FOR HEROKU DEPLOY
-
 
 # using this to find and run our tests:
 pytest
+
+#the heroku server wants to use this package to run our web app
+gunicorn
