@@ -16,6 +16,5 @@ flask
 # using this to find and run our tests:
 pytest
 
-
 #the heroku server wants to use this package to run our web app
 gunicorn
