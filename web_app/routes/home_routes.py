@@ -8,14 +8,14 @@ home_routes = Blueprint("home_routes", __name__)
 @home_routes.route("/home")
 def index():
     print("HOME...")
-    return "Welcome Home"
-    #return render_template("home.html")
+    #return "Welcome Home"
+    return render_template("home.html")
 
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
-    return "About Me"
-    #return render_template("about.html")
+    #return "About Me"
+    return render_template("about.html")
 
 @home_routes.route("/hello")
 def hello_world():
