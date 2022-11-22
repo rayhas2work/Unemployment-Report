@@ -11,7 +11,7 @@ plotly
 sendgrid==6.6.0
 
 #for web app interface
-flask
+flask==2.2.1
 
 # using this to find and run our tests:
 pytest

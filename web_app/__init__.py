@@ -20,6 +20,7 @@ def create_app():
     app = Flask(__name__)
     #app.config["SECRET_KEY"] = SECRET_KEY
 
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
     app.register_blueprint(home_routes)
     app.register_blueprint(stocks_routes)
     app.register_blueprint(unemployment_routes)
@@ -27,6 +28,6 @@ def create_app():
     #app.register_blueprint(weather_routes)
     return app
 
-if __name__ == "__main__":
-    my_app = create_app()
-    my_app.run(debug=True)
+#if __name__ == "__main__":
+    #my_app = create_app()
+    #my_app.run(debug=True)
